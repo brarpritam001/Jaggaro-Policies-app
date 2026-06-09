@@ -70,22 +70,44 @@
   area and never leaves the device. You can clear it from your device
   settings or by uninstalling the Game.</p>
 
-  <h2>2. What we do NOT collect</h2>
+  <h2>2. What we do NOT collect ourselves</h2>
   <ul>
     <li>No name, email, phone number, address, or other contact info.</li>
-    <li>No precise or coarse location.</li>
+    <li>No precise location data accessed by the Game itself.</li>
     <li>No photos, files, contacts, calendar, or other personal content.</li>
-    <li>No advertising identifiers in the current release.</li>
-    <li>No analytics events sent to a remote server.</li>
+    <li>No analytics events sent to a Jaggaro-operated server (we do not
+    operate any servers).</li>
+    <li>No real-money purchases — the Game contains no in-app purchases,
+    subscriptions, or coin packs.</li>
   </ul>
 
-  <h2>3. Third-party services that may run on this device</h2>
-  <p>The current Game release does not link any third-party advertising,
-  analytics, in-app purchase, or crash-reporting SDK. The Game is
-  entirely free and contains no purchases of any kind. If a future
-  update enables advertising or another partner SDK, this policy will
-  be updated and the Game's Data Safety section on Google Play will be
-  updated before that build is published.</p>
+  <h2>3. Third-party services — Google AdMob</h2>
+  <p>The Game uses <strong>Google AdMob</strong>, a Google advertising
+  service, to display advertisements inside the Game. AdMob is the
+  only third-party SDK the Game links. When an ad is shown, AdMob may
+  collect or process the following device-level signals to serve and
+  measure relevant ads:</p>
+  <ul>
+    <li><strong>Advertising identifier</strong> — Android Advertising ID
+    (AAID) or Apple's Identifier for Advertisers (IDFA), depending on
+    your device and your OS-level ad-tracking permission.</li>
+    <li><strong>IP address</strong> — used by Google to infer approximate
+    region for region-appropriate ad targeting.</li>
+    <li><strong>Device model, OS version, screen size</strong> — for
+    correctly rendering ads.</li>
+    <li><strong>Ad-interaction events</strong> (impression, click,
+    rewarded-ad completion) — for ad measurement and reporting.</li>
+  </ul>
+  <p>Google's policies and data practices govern that processing. See
+  Google's privacy policy at
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+  and AdMob's developer privacy notice at
+  <a href="https://developers.google.com/admob/android/privacy">developers.google.com/admob/android/privacy</a>.
+  You can reset or limit the advertising identifier from your device
+  Settings → Google → Ads (Android) or Settings → Privacy →
+  Tracking (iOS).</p>
+  <p>No other third-party SDK ships with the Game — no analytics, no
+  crash-reporting, no remote configuration, no other ad networks.</p>
 
   <h2>4. Children's privacy</h2>
   <p>The Game is rated for general audiences and does not knowingly
@@ -95,9 +117,10 @@
 
   <h2>5. Permissions the Game requests on Android</h2>
   <ul>
-    <li><strong>Internet</strong> – reserved for future store-managed flows
-    (in-app review prompt, in-app purchase) and not used for any
-    analytics, tracking, or remote logging in the current release.</li>
+    <li><strong>Internet</strong> – used by Google AdMob to fetch and
+    display advertisements and by the operating system's in-app review
+    prompt. Not used for any Jaggaro-operated analytics, tracking, or
+    remote logging.</li>
     <li><strong>Vibrate</strong> – used for the optional haptic feedback you
     can disable in Settings.</li>
   </ul>
