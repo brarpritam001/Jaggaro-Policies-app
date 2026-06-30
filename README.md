@@ -12,6 +12,7 @@ HTML file) hosted via GitHub Pages.
 | Color Sort Jam  | [`colorsortjam/index.html`](colorsortjam/index.html) |
 | Bubble Rush     | [`bubblerush/index.html`](bubblerush/index.html)     |
 | Omni            | [`omni/index.html`](omni/index.html)                 |
+| Klyr            | [`klyr/index.html`](klyr/index.html)                 |
 
 ## Published URLs (GitHub Pages)
 
@@ -23,6 +24,7 @@ from the `main` branch, root folder), the policies are publicly available at:
 | Color Sort Jam  | https://brarpritam001.github.io/Jaggaro-Policies-app/colorsortjam/    |
 | Bubble Rush     | https://brarpritam001.github.io/Jaggaro-Policies-app/bubblerush/      |
 | Omni            | https://brarpritam001.github.io/Jaggaro-Policies-app/omni/            |
+| Klyr            | https://brarpritam001.github.io/Jaggaro-Policies-app/klyr/            |
 
 ## Contact
 
