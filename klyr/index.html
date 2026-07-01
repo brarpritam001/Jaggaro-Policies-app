@@ -49,7 +49,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <small>Effective date: June 30, 2026</small>
+  <small>Effective date: July 1, 2026</small>
 
   <p><strong>Klyr</strong> (the "App") is published by <strong>Jaggaro</strong>
   ("we", "us"). Klyr is an offline-first, privacy-first personal and
@@ -58,11 +58,14 @@
   customers, inventory, memberships, appointments, staff and rentals. This
   policy explains what data the App handles and how.</p>
 
-  <p><strong>All of your financial data stays on your device.</strong> Klyr
-  has no account, no sign-up, and no login. We do not operate any backend
-  server or cloud database, and we do not sync, upload, or copy your data to
-  Jaggaro or to any third party. Your records live only on the device where
-  you installed the App, and work fully offline.</p>
+  <p><strong>By default, all of your financial data stays on your device.</strong>
+  Klyr needs no account, no sign-up and no login to use, and works fully
+  offline. We do not operate any backend server or database, and we never
+  receive, store or access your data. The only ways your data can leave your
+  device are ones you turn on yourself: the manual backups and exports in
+  Section 2, and the optional Cloud Sync in Section 3 (which uses <em>your
+  own</em> Google Drive, not ours). Klyr also shows ads via Google AdMob
+  (Section 7).</p>
 
   <h2>1. What the App stores on your device</h2>
   <p>Klyr saves the information you enter so the App is useful — all of it in
@@ -81,11 +84,12 @@
     <li><strong>Preferences</strong> — language, theme (light/dark), currency,
     personal/business workspace, and feature settings.</li>
     <li><strong>An optional app-lock PIN</strong>, kept in the device's secure
-    keystore (see Section 4).</li>
+    keystore (see Section 5).</li>
   </ul>
-  <p>This data never leaves your device on its own. You can delete individual
-  records inside the App, wipe everything from your device settings, or remove
-  it all by uninstalling the App.</p>
+  <p>Unless you turn on Cloud Sync (Section 3), this data never leaves your
+  device on its own. You can delete individual records inside the App, wipe
+  everything from your device settings, or remove it all by uninstalling the
+  App.</p>
 
   <h2>2. Backups, exports &amp; sharing — only when you choose</h2>
   <p>Klyr can create files <em>at your request</em>, and you decide where they
@@ -104,39 +108,80 @@
   never receives them. Once you share a file with another app or service, that
   app's or service's own privacy policy applies (for example WhatsApp).</p>
 
-  <h2>3. The Klyr AI assistant is on-device</h2>
+  <h2>3. Optional cloud sync — your own Google Drive</h2>
+  <p>Klyr works fully offline. If you want to use your data on more than one
+  device (or keep an automatic off-device copy), you can <strong>optionally</strong>
+  turn on <strong>Cloud Sync</strong>, which uses <strong>your own Google
+  Drive</strong> — never a Jaggaro server:</p>
+  <ul>
+    <li><strong>You sign in with your own Google account</strong> (Google
+    Sign-In). Klyr requests only the minimal <em>Drive app-data</em> scope
+    (<code>drive.appdata</code>) — a hidden, app-private folder inside your
+    Google Drive. Klyr <strong>cannot see, read or change any of your other
+    Drive files</strong>, photos or documents, and does not read your name,
+    email or contacts.</li>
+    <li><strong>Where your data goes.</strong> When Cloud Sync is on, a copy
+    (snapshot) of your Klyr records is stored in that private folder of
+    <em>your</em> Google Drive over an encrypted (HTTPS) connection, so another
+    device signed in with the same Google account can sync the same data.</li>
+    <li><strong>Jaggaro never receives it.</strong> We operate no server and
+    have no access to your Google account or Drive. The data moves only between
+    your device(s) and your own Google Drive. Your Google account and the files
+    in your Drive are governed by
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>Off by default, and reversible.</strong> Cloud Sync is off
+    unless you enable it. You can disconnect any time in the App
+    (Backup &amp; Restore → Cloud Sync → Disconnect); local data stays on your
+    device. You can also revoke Klyr's access to your Drive at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Not synced.</strong> Your app-lock PIN and device-only settings
+    are never synced. Receipt-image attachments are kept on-device and are not
+    part of the sync.</li>
+  </ul>
+  <p>Klyr's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+  API Services User Data Policy</a>, including its Limited Use requirements. The
+  <code>drive.appdata</code> data is used solely to provide the sync feature and
+  is not transferred to others or used for advertising.</p>
+
+  <h2>4. The Klyr AI assistant is on-device</h2>
   <p>Klyr's built-in money assistant answers questions about your own numbers
   (for example "how much did I spend this month"). It runs <strong>entirely
   on your device</strong> using your local data — it is not a cloud AI, sends
   nothing to any server, and works offline.</p>
 
-  <h2>4. App lock &amp; biometrics</h2>
+  <h2>5. App lock &amp; biometrics</h2>
   <p>You can optionally protect the App with a PIN and/or your device biometric
   (fingerprint or face). The PIN is stored in the device's secure keystore.
   Biometric verification is performed by your device's operating system —
   Klyr only receives a yes/no result and <strong>never accesses or stores your
   fingerprint or face data</strong>.</p>
 
-  <h2>5. What we do NOT collect ourselves</h2>
+  <h2>6. What we do NOT collect ourselves</h2>
   <ul>
-    <li>No name, email, phone number, address, or other contact info about you.</li>
-    <li>No account or login — the App has no sign-up.</li>
+    <li>No name, email, phone number, address, or other contact info collected
+    by Jaggaro. (If you enable Cloud Sync, you authenticate to <em>your own</em>
+    Google account — Klyr still does not collect your Google profile details;
+    see Section 3.)</li>
+    <li>No Jaggaro account or login — the App has no Jaggaro sign-up. The only
+    optional sign-in is Google Sign-In for Cloud Sync, which connects you to
+    your own Google Drive, not to any Jaggaro system.</li>
     <li>No precise location accessed by the App itself.</li>
-    <li>We never upload, copy, or transmit your financial records,
-    attachments, backups, or reports — they stay on-device.</li>
+    <li>We never upload, copy or transmit your financial records, attachments,
+    backups or reports to Jaggaro — they stay on your device (and, only if you
+    enable Cloud Sync, in your own Google Drive per Section 3).</li>
     <li>No analytics or crash events sent to a Jaggaro-operated server (we do
     not operate any servers).</li>
   </ul>
 
-  <h2>6. Third-party services — Google AdMob</h2>
+  <h2>7. Third-party services — Google AdMob</h2>
   <p>Klyr is free and uses <strong>Google AdMob</strong>, a Google advertising
-  service, to display advertisements (a banner, occasional full-screen
-  interstitials at natural breaks, and an optional rewarded ad you can choose
-  to watch to turn ads off for a short while). AdMob is the only third-party
-  advertising SDK the App links. Klyr requests
-  <strong>non-personalized ads only</strong> — it does not use your data for
-  ad targeting. To serve and measure ads, AdMob may still collect or process
-  the following device-level signals:</p>
+  service, to display advertisements — banners on many screens and occasional
+  full-screen interstitials shown at natural breaks (after you complete an
+  action). AdMob is the only third-party advertising SDK the App links. Klyr
+  requests <strong>non-personalized ads only</strong> — it does not use your
+  data for ad targeting. To serve and measure ads, AdMob may still collect or
+  process the following device-level signals:</p>
   <ul>
     <li><strong>Advertising identifier</strong> — Android Advertising ID
     (AAID), depending on your device and your OS-level ad settings.</li>
@@ -144,8 +189,8 @@
     region for region-appropriate, non-personalized ads and fraud prevention.</li>
     <li><strong>Device model, OS version, screen size</strong> — for correctly
     rendering ads.</li>
-    <li><strong>Ad-interaction events</strong> (impression, click,
-    rewarded-ad completion) — for ad measurement and reporting.</li>
+    <li><strong>Ad-interaction events</strong> (impression, click) — for ad
+    measurement and reporting.</li>
   </ul>
   <p>Google's policies and data practices govern that processing. See Google's
   privacy policy at
@@ -153,61 +198,68 @@
   and AdMob's developer privacy notice at
   <a href="https://developers.google.com/admob/android/privacy">developers.google.com/admob/android/privacy</a>.
   You can reset or limit the advertising identifier from your device
-  Settings → Google → Ads. No other third-party SDK sends data off your
-  device — no Jaggaro analytics, no crash-reporting server, no remote
-  configuration, and no other ad networks. Ad serving is the only networked
-  feature; everything else in Klyr works offline.</p>
+  Settings → Google → Ads. Apart from Google AdMob and (only if you enable it)
+  Google Drive sync, no other third-party SDK sends data off your device — no
+  Jaggaro analytics, no crash-reporting server, and no other ad networks.</p>
 
-  <h2>7. Permissions the App uses on Android</h2>
+  <h2>8. Permissions the App uses on Android</h2>
   <ul>
     <li><strong>Internet &amp; network state</strong> — used by Google AdMob to
-    fetch and display ads, and to detect whether you are online. Not used for
-    any Jaggaro analytics, tracking, or to upload your data.</li>
+    fetch and display ads, by the optional Cloud Sync to talk to your Google
+    Drive, and to detect whether you are online. Not used for any Jaggaro
+    analytics or tracking.</li>
+    <li><strong>Google account (Sign-In)</strong> — only if you turn on Cloud
+    Sync, to authenticate you to your own Google Drive (Section 3).</li>
     <li><strong>Notifications</strong> — to show the bill, EMI, rent and other
     reminders you set. All reminders are scheduled locally on your device.</li>
     <li><strong>Biometric / fingerprint</strong> — only for the optional app
-    lock (Section 4).</li>
+    lock (Section 5).</li>
     <li><strong>Photos / storage</strong> — to attach a receipt image to a
     record if you choose, and to save backups and PDF/CSV exports you create.
     The App accesses only the items you pick.</li>
     <li><strong>Camera</strong> — only if you choose to capture a photo to
     attach to a record.</li>
     <li><strong>Advertising ID &amp; vibration</strong> — the advertising ID is
-    used by AdMob (Section 6); vibration powers optional haptic feedback.</li>
+    used by AdMob (Section 7); vibration powers optional haptic feedback.</li>
   </ul>
-  <p>Some ad formats served by the Google AdMob SDK (for example video or
-  rewarded ads) may use additional standard device capabilities to play the ad;
-  these are controlled by Google's SDK, not by Jaggaro.</p>
+  <p>Some ad formats served by the Google AdMob SDK may use additional standard
+  device capabilities to play the ad; these are controlled by Google's SDK, not
+  by Jaggaro.</p>
 
-  <h2>8. Data retention &amp; security</h2>
-  <p>Because your data is stored only on your device, you control its lifetime:
-  it remains until you delete it in the App or uninstall the App. We recommend
-  keeping a backup if your data matters to you, since uninstalling removes it
-  permanently and we hold no copy to restore from.</p>
+  <h2>9. Data retention &amp; security</h2>
+  <p>Your on-device data remains until you delete it in the App or uninstall the
+  App. If you enable Cloud Sync, a copy also lives in your own Google Drive
+  until you delete it there or disconnect and remove it — you control that copy
+  through your Google account. We recommend keeping a backup if your data
+  matters to you, since uninstalling removes the on-device copy permanently and
+  Jaggaro holds no copy to restore from.</p>
 
-  <h2>9. Children's privacy</h2>
+  <h2>10. Children's privacy</h2>
   <p>The App is intended for a general audience and does not knowingly collect
   personal information from anyone, including children under 13. Because no
   personal data is collected by Jaggaro at all, COPPA and similar regimes do
   not apply to data we hold (none). Ads are served by Google AdMob under
   Google's policies.</p>
 
-  <h2>10. Your choices</h2>
+  <h2>11. Your choices</h2>
   <ul>
     <li>Grant or deny camera, photo, and notification access from your device
     Settings; features that don't need a given permission keep working.</li>
+    <li>Turn Cloud Sync on or off, and disconnect Google Drive, inside the App;
+    revoke Klyr's Drive access at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
     <li>Delete individual records inside the App at any time.</li>
     <li>Export a backup before changing devices or uninstalling.</li>
     <li>Reset or limit the advertising identifier from your device settings.</li>
     <li>Remove all on-device data by uninstalling the App.</li>
   </ul>
 
-  <h2>11. Changes to this policy</h2>
+  <h2>12. Changes to this policy</h2>
   <p>If material changes are made — for example, if a new third-party service
   is added in a future release — this page will be updated and the new
   Effective date will be displayed at the top.</p>
 
-  <h2>12. Contact</h2>
+  <h2>13. Contact</h2>
   <p>If you have questions about this policy, email
   <a href="mailto:hellojaggaro@gmail.com">hellojaggaro@gmail.com</a>.</p>
 </main>
